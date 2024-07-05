@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1C2833;
+  color: #f8f9f9;
+  font-family: "Playwrite GB S", cursive;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 80px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+.a1 {
+  border-bottom: 1px solid #515A5A;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 30px;
+  box-shadow: 3px 3px 12px 3px #1C2833;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #1C2833;
+}
+
+.a2 {
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.a3 {
+  font-size: 24px;
+  transition: .3s transform ease-out;
+}
+
+.a3:hover {
+  transform: rotate(180deg);
+}
+
+.a5 {
+  border: 1px solid #515A5A;
+  border-radius: 12px;
+  margin: 25px auto;
+  width: 85%;
+  max-width: 420px;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px 2px 10px;
+  transition: .2s border-color ease-in;
+}
+
+.a5 a {
+  margin: 0 4px;
+  color: #f8f9f9;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 8px;
+  transition: .3s background ease-in;
+}
+
+.a5 a:hover{
+  background: #17202A80;
+}
+
+.a5 a.active{
+  background: #17202A;
+}
+
+.a5:hover {
+  border-color: #1E8449;
+}
+
+.a5::-webkit-scrollbar {
+  height: 14px;
+}
+
+.a5::-webkit-scrollbar-track{
+  background-color: transparent;
+  margin-inline: 6px;
+}
+
+
+.a5::-webkit-scrollbar-thumb{
+  background-color: #229954;
+  border: 4px solid #1C2833;
+  border-radius: 20px;
+}
+
+
+.a6 {
+  display: flex;
+  flex-direction: column;
+}
+
+.a7 {
+  width: 95%;
+  height: auto;
+  background: #273746;
+  margin: 18px auto;
+  border-radius: 16px;
+  border: 1px solid #515A5A;
+  box-shadow: 3px 3px 10px 3px #17202A;
+  scroll-padding: 70px;
+  display: block;
+}
+
+.a8 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+}
+
+.a8 ion-icon {
+  font-size: 20px;
+}
+
+.a9 {
+  width: 95%;
+  height: 100%;
+  margin: 15px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+  padding: 10px;
+  border-radius: 4px 10px 10px 4px;
+}
+
+.a10 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid deeppink;
+  border-radius: 8px;
+}
