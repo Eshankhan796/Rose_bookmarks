@@ -1,0 +1,193 @@
+<div class="a9" style="background: rgba(194, 24, 91, 25%); border-left: 6px solid #C2185B;">
+  <div class="a10 a11" id=""><ion-icon name="add" role="img" class="md hydrated"></ion-icon><label>ADD</label></div>
+</div>
+
+
+
+
+
+
+
+<div class="a7" id="streaming">
+  <div class="a8">
+    <label>Streaming</label>
+    <ion-icon name="ellipsis-vertical"></ion-icon>
+  </div>
+  <div class="a9" style="background: rgba(76, 175, 80, 25%); border-left: 6px solid #4CAF50;">
+    <div class="a10 a11" id="id_3"><ion-icon name="add"></ion-icon><label>ADD</label></div>
+  </div>
+</div>
+<div class="a7" id="proton">
+  <div class="a8">
+    <label>Proton</label>
+    <ion-icon name="ellipsis-vertical"></ion-icon>
+  </div>
+  <div class="a9" style="background: rgba(109, 74, 255, 25%); border-left: 6px solid #6D4AFF;">
+    <div class="a10 a11" id="id_3"><ion-icon name="add"></ion-icon><label>ADD</label></div>
+  </div>
+</div>
+<div class="a7" id="crypto">
+  <div class="a8">
+    <label>Crypto</label>
+    <ion-icon name="ellipsis-vertical"></ion-icon>
+  </div>
+  <div class="a9" style="google">
+    <div class="a10 a11" id="id_3"><ion-icon name="add"></ion-icon><label>ADD</label></div>
+  </div>
+</div>
+<div class="a7" id="torrent">
+  <div class="a8">
+    <label>Torrent</label>
+    <ion-icon name="ellipsis-vertical"></ion-icon>
+  </div>
+  <div class="a9" style="background: rgba(81, 45, 168, 25%); border-left: 6px solid #512DA8;">
+    <div class="a10 a11" id="id_3"><ion-icon name="add"></ion-icon><label>ADD</label></div>
+  </div>
+</div>
+<div class="a7" id="social">
+  <div class="a8">
+    <label>Social</label>
+    <ion-icon name="ellipsis-vertical"></ion-icon>
+  </div>
+  <div class="a9" style="background: rgba(255, 160, 0, 25%); border-left: 6px solid #FFA000;">
+    <div class="a10 a11" id="id_3"><ion-icon name="add"></ion-icon><label>ADD</label></div>
+  </div>
+</div>
+<div class="a7" id="google">
+  <div class="a8">
+    <label>Google</label>
+    <ion-icon name="ellipsis-vertical"></ion-icon>
+  </div>
+  <div class="a9" style="background: linear-gradient(90deg, rgba(66, 133, 244, 25%), rgba(52, 168, 83, 25%), rgba(251, 188, 5, 25%), rgba(234, 67, 53, 25%)); border-left: 6px solid; border-image: linear-gradient(180deg, #4285F4, #34A853, #FBBC05, #EA4335) 1;">
+    <div class="a10 a11" id="id_3"><ion-icon name="add"></ion-icon><label>ADD</label></div>
+  </div>
+</div>
+<div class="a7" id="misc">
+  <div class="a8">
+    <label>Misc</label>
+    <ion-icon name="ellipsis-vertical"></ion-icon>
+  </div>
+  <div class="a9" style="background: rgba(230, 74, 25, 25%); border-left: 6px solid #BF360C;">
+    <div class="a10 a11" id="id_3"><ion-icon name="add"></ion-icon><label>ADD</label></div>
+  </div>
+</div>
+
+
+
+
+new code 
+
+
+<div class="a7" id="ai">
+  <div class="a8">
+    <label>AI</label>
+    <ion-icon name="ellipsis-vertical"></ion-icon>
+  </div>
+  <ul class="a9" style="background: rgba(52, 73, 94, 25%); border-left: 6px solid #34495E;">
+    <li class="a10 a11" data-container-name="ai" onclick="add_bookmark(this.dataset.containerName)">
+      <ion-icon name="add"></ion-icon>
+      <label>ADD</label>
+    </li>
+  </ul>
+</div>
+<div class="a7" id="dev">
+  <div class="a8">
+    <label>Dev</label>
+    <ion-icon name="ellipsis-vertical"></ion-icon>
+  </div>
+  <div class="a9" style="background: rgba(0, 188, 212, 25%); border-left: 6px solid #00BCD4;">
+    <div class="a10 a11" data-container-name="dev" onclick="add_bookmark(this.dataset.containerName)">
+      <ion-icon name="add"></ion-icon>
+      <label>ADD</label>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+csss
+
+
+
+
+a6 {
+display: flex;
+flex-direction: column;
+}
+
+.a7 {
+width: 95%;
+height: auto;
+background: #273746;
+margin: 18px auto;
+border-radius: 16px;
+border: 1px solid #515A5A;
+box-shadow: 3px 3px 10px 3px #17202A;
+scroll-padding: 70px;
+display: block;
+}
+
+.a8 {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 6px 10px;
+}
+
+.a8 ion-icon {
+font-size: 20px;
+}
+
+.a9 {
+width: 95%;
+height: 100%;
+margin: 15px auto;
+display: flex;
+flex-wrap: wrap;
+gap: 16px 16px;
+padding: 10px 16px;
+border-radius: 4px 10px 10px 4px;
+}
+
+.a10 {
+width: 50px;
+height: 50px;
+border-radius: 8px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+.a10 label {
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+font-size: 12px;
+width: 65px;
+text-align: center;
+}
+
+.a10 img {
+width: 29px;
+border: 1px solid gold;
+padding: 4px;
+border-radius: 8px;
+}
+
+.a11 {
+font-size: 12px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.a11 ion-icon {
+border: 1px solid gold;
+border-radius: 8px;
+font-size: 26px;
+}
