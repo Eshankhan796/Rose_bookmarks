@@ -9,7 +9,6 @@ body {
   background-color: #232531;
   color: #f8f9f9;
   font-family: "Playwrite GB S", cursive;
-  padding-bottom: 50px;
 }
 
 html {
@@ -104,7 +103,7 @@ html {
 
 
 .a5::-webkit-scrollbar-thumb {
-  background-color: #ff6b53;
+  background-color: #FF6B53;
   border: 4px solid #232531;
   border-radius: 20px;
 }
@@ -119,14 +118,54 @@ html {
   transition: .2s all ease-out;
   list-style: none;
   overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.a6:hover {
+  transform: scale(1.01);
 }
 
 .a6 ul {
   width: 95%;
-  height: 100px;
+  height: 100%;
   margin: 16px auto;
   border-radius: 0 10px 10px 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+
+}
+
+.a6 ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  margin: 6px 15px;
+}
+
+.a6 ul li ion-icon {
+  border: 1px solid gold;
+  border-radius: 8px;
+  font-size: 24px;
+  padding: 2px;
+}
+
+.a6 ul li label {
+  white-space: nowrap;
+  width: 150%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-size: 14px;
+}
+
+.a6 ul li img {
+  width: 30px;
+  border: 1px solid gold;
+  border-radius: 8px;
+  padding: 4px;
 }
 
 .a7 {
@@ -135,7 +174,6 @@ html {
   margin: auto;
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
 }
 
 .a8 {
@@ -154,4 +192,104 @@ html {
 
 .a8 ion-icon {
   font-size: 24px;
+}
+
+.a9 {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  border: 1px solid #515A5A;
+  width: 92%;
+  border-radius: 18px;
+  max-width: 600px;
+  background: #232531;
+  overflow: hidden;
+}
+
+.a10 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  border-bottom: 1px solid #515A5A;
+}
+
+#bookmark_form {
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+#bookmark_form input,
+#bookmark_form textarea {
+  margin: 4px 0 8px 0;
+  width: 100%;
+  background: #1A1C25;
+  color: #f8f9f9;
+  font-family: "Playwrite GB S", cursive;
+  border-radius: 10px;
+  border: 2px solid #515A5A;
+  transition: .3s all ease-out;
+}
+
+#bookmark_form input[type="url"] {
+  margin: 0 0 0 0;
+}
+
+#bookmark_form label {
+  font-size: 15px;
+}
+
+#bookmark_form textarea {
+  padding: 6px 10px;
+}
+
+#bookmark_form input {
+  font-size: 16px;
+  padding: 4px 8px;
+}
+
+#bookmark_form input:focus,
+#bookmark_form textarea:focus{
+  outline: 3.5px solid rgba(81, 90, 90, .5);
+}
+
+.a11 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.a11 ion-icon {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.a12 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.a12 button {
+  padding: 4px;
+  font-size: 18px;
+  font-family: "Playwrite GB S", cursive;
+  border-radius: 10px;
+  background: rgba(255, 107, 83, .4);
+  border: 2px solid rgba(255, 107, 83, .8);
+  transition: .3s all ease-in-out;
+  color: #FF6B53;
+}
+
+.a12 button:hover,
+.a12 button:focus {
+outline: 3.5px solid rgba(255, 107, 83, .3);
 }
